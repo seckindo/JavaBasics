@@ -6,6 +6,24 @@ public class OperatorsandNumbers {
 
 	public static void main(String[] args) {
 		
+		
+		numberToBinary(); //Q1
+		
+		binaryToNumber(); //Q2
+		
+		leftShift(); //Q3
+
+		rightShift(); //Q4
+		
+		bitwise();  //Q5
+		
+		postfix(); //Q6 - Q7
+		
+		prefix(); //Q8
+		
+	}
+	
+	public static void numberToBinary() {
 		int num = 1;
 		int div = 2;
 		String str = "";
@@ -89,7 +107,9 @@ public class OperatorsandNumbers {
 		}
 		
 		System.out.println(div + str);
-		
+	}
+	
+	public static void binaryToNumber() {
 		String binaryNum = "0010";
 		int decNum = 0;
 		
@@ -155,7 +175,9 @@ public class OperatorsandNumbers {
 		}
 		
 		System.out.println(decNum);
-		
+	}
+	
+	public static void leftShift() {
 		int x = 2;
 		System.out.println(Integer.toBinaryString(x));
 		int y = x << 2;
@@ -183,7 +205,9 @@ public class OperatorsandNumbers {
 		x = y;
 		System.out.println(x);
 		System.out.println(Integer.toBinaryString(x));
-		
+	}
+	
+	public static void rightShift() {
 		int xx = 150;
 		System.out.println(Integer.toBinaryString(xx));
 		int yy = xx >> 2;
@@ -211,14 +235,18 @@ public class OperatorsandNumbers {
 		xx = yy;
 		System.out.println(xx);
 		System.out.println(Integer.toBinaryString(xx));
-		
+	}
+	
+	public static void bitwise() {
 		int xxx = 7;
 		int yyy = 17;
 		int zzz = xxx & yyy;
 		System.out.println("x&y = " + zzz);
 		zzz = xxx | yyy;
 		System.out.println("x|y = " + zzz);
-		
+	}
+	
+	public static void postfix() {
 		int postFix = 3;
 		System.out.println(postFix);
 		postFix++;
@@ -232,7 +260,9 @@ public class OperatorsandNumbers {
 			postFix++;
 			System.out.println(postFix);
 		}
-		
+	}
+	
+	public static void prefix() {
 		int xxxx = 5;
 		int yyyy = 8;
 		
@@ -243,9 +273,6 @@ public class OperatorsandNumbers {
 		
 		sum = xxxx++ + yyyy;
 		System.out.println("sum is " + sum);
-
 	}
-	
-	
 
 }

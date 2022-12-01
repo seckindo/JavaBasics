@@ -140,7 +140,7 @@ public class Assignment2 {
 			The biggest number is 13
 		 */
 		
-		int numbers5 [] = {4,2,9,13,1,0};
+		int [] numbers5 = {4,2,9,13,1,0};
 		
 		for (int a = 0; a<numbers5.length; a++) {
 			for (int b = a+1; b<numbers5.length; b++) {
@@ -156,7 +156,7 @@ public class Assignment2 {
 		
 		System.out.println("Array in ascending order: " + Arrays.toString(numbers5));
 		System.out.println("The smallest number is " + numbers5[0]);
-		System.out.println("The biggest number is " + numbers5[5]);
+		System.out.println("The biggest number is " + numbers5[numbers5.length-1]);
 		
 		/*
 		 * Create an array that includes an integer, 3 strings, and 1 double. 
